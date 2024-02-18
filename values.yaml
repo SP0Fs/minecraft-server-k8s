@@ -7,7 +7,7 @@ nodeSelector:
   kubernetes.io/hostname: c-nuc7
 
 minecraftServer:
-  eula: "TRUE"
+  eula: "true"
   version: "1.20.4"
   type: "FABRIC"
   difficulty: hard
