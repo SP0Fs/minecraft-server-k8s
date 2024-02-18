@@ -39,8 +39,8 @@ minecraftServer:
   rcon:
     enabled: true
     withGeneratedPassword: true
-    existingSecret:
-    secretKey:
+    existingSecret: rcon-password-secret
+    secretKey: password
 
 extraEnv:
   INIT_MEMORY: 1G
