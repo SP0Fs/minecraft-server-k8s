@@ -9,7 +9,7 @@ nodeSelector:
 minecraftServer:
   eula: "true"
   version: "1.20.4"
-  type: "FABRIC"
+  type: "VANILLA"
   difficulty: hard
   whitelist: Nicchus97,BadestFlopHD,user3,user4
   ops: Nicchus97
@@ -33,8 +33,8 @@ minecraftServer:
   pvp: true
   memory: ""
 
-  modUrls: 
-   - "https://mediafilez.forgecdn.net/files/4930/701/fabric-carpet-1.20.3-1.4.128%2Bv231205.jar"
+  #modUrls: 
+  # - "https://mediafilez.forgecdn.net/files/4930/701/fabric-carpet-1.20.3-1.4.128%2Bv231205.jar"
 
   rcon:
     enabled: true
