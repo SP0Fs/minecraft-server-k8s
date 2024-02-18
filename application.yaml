@@ -6,7 +6,7 @@ metadata:
 spec:
   project: spof-cluster
   sources:
-    - chart: minecraft-server
+    - chart: minecraft
       repoURL: https://itzg.github.io/minecraft-server-charts/
       targetRevision: 4.15.0
       helm:
