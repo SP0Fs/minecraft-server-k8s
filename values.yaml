@@ -7,11 +7,13 @@ nodeSelector:
   kubernetes.io/hostname: c-nuc7
 
 livenessProbe:
-  initialDelaySeconds: 60
+  initialDelaySeconds: 100
   periodSeconds: 10
+  timeoutSeconds: 5
 readinessProbe:
-  initialDelaySeconds: 60
+  initialDelaySeconds: 100
   periodSeconds: 10
+  timeoutSeconds: 5
 
 minecraftServer:
   eula: "true"
