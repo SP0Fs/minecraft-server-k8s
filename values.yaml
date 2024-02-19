@@ -6,6 +6,13 @@ resources:
 nodeSelector:
   kubernetes.io/hostname: c-nuc7
 
+livenessProbe:
+  initialDelaySeconds: 60
+  periodSeconds: 10
+readinessProbe:
+  initialDelaySeconds: 60
+  periodSeconds: 10
+
 minecraftServer:
   eula: "true"
   version: "1.20.4"
