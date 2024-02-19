@@ -38,7 +38,7 @@ minecraftServer:
 
   rcon:
     enabled: true
-    withGeneratedPassword: true
+    withGeneratedPassword: false
     existingSecret: rcon-password-secret
     secretKey: password
 
