@@ -1,7 +1,7 @@
 resources:
   limits:
     memory: 4096Mi
-    cpu: 2
+    cpu: 3
 
 nodeSelector:
   kubernetes.io/hostname: c-nuc7
@@ -52,7 +52,7 @@ minecraftServer:
     secretKey: password
 
 extraEnv:
-  INIT_MEMORY: 1G
+  INIT_MEMORY: 2G
   MAX_MEMORY: 4G
 
 persistence:
