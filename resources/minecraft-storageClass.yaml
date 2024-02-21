@@ -1,7 +1,7 @@
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-    name: minecraftStorage
+    name: minecraft-storage
     namespace: minecraft-server
 provisioner: kubernetes.io/no-provisioner
 volumeBidingMode: WaitForFirstConsumer

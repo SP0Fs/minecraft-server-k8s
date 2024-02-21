@@ -12,7 +12,7 @@ spec:
         nodeSelectorTerms:
           - matchFields:
             - kubernetes.io/hostname: c-nuc7
-  storageClassName: minecraftStorage
+  storageClassName: minecraft-storage
   capacity:
     storage: 20Gi
   accessModes:

@@ -7,7 +7,7 @@ spec:
   nodeSelector:
     matchLabels:
       kubernetes.io/hostname: c-nuc7
-  storageClassName: minecraftStorage
+  storageClassName: minecraft-storage
   accessModes:
     - ReadWriteOnce
   resources:
