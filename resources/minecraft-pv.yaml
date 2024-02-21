@@ -9,7 +9,9 @@ spec:
   nodeAffinity: 
     required: 
       nodeSelector:
-        kubernetes.io/hostname: c-nuc7
+        nodeSelectorTerms:
+          - matchFields:
+            - kubernetes.io/hostname: c-nuc7
   storageClassName: minecraftStorage
   capacity:
     storage: 20Gi
