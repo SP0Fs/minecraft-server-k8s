@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: minecraft-pv
+  namespace: minecraft-server
+  labels:
+    type: local
+spec:
+  nodeAffinity: 
+    required: 
+      nodeSelector:
+        kubernetes.io/hostname: c-nuc7
+  storageClassName: minecraftStorage
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/data"

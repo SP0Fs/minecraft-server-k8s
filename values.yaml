@@ -56,7 +56,7 @@ extraEnv:
   MAX_MEMORY: 4G
 
 persistence:
-  storageClass: ssd
+  storageClass: minecraftStorage
   dataDir:
     enabled: true
     Size: 10Gi

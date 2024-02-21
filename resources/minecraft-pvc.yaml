@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minecraft-pvc
+  namespace: minecraft-server
+spec:
+  nodeSelector:
+    matchLabels:
+      kubernetes.io/hostname: c-nuc7
+  storageClassName: minecraftStorage
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
