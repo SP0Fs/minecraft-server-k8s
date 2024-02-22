@@ -56,7 +56,6 @@ extraEnv:
   MAX_MEMORY: 4G
 
 persistence:
-  storageClass: minecraft-storage
   dataDir:
     enabled: true
   existingClaim: minecraft-pvc
