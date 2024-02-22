@@ -6,13 +6,7 @@ metadata:
   labels:
     type: local
 spec:
-  nodeAffinity: 
-    required: 
-      nodeSelector:
-        nodeSelectorTerms:
-          - matchFields:
-            - kubernetes.io/hostname: c-nuc7
-  storageClassName: minecraft-storage
+  storageClassName: manual
   capacity:
     storage: 20Gi
   accessModes:

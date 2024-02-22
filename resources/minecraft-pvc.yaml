@@ -4,12 +4,9 @@ metadata:
   name: minecraft-pvc
   namespace: minecraft-server
 spec:
-  nodeSelector:
-    matchLabels:
-      kubernetes.io/hostname: c-nuc7
-  storageClassName: minecraft-storage
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 10Gi
+      storage: 20Gi
