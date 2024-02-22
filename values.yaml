@@ -59,7 +59,7 @@ persistence:
   storageClass: minecraft-storage
   dataDir:
     enabled: true
-    Size: 10Gi
+  existingClaim: minecraft-pvc
 
 mcbackup:
   enabled: true
