@@ -20,7 +20,7 @@ minecraftServer:
   version: "1.20.4"
   type: "VANILLA"
   difficulty: hard
-  whitelist: Nicchus97,BadestFlopHD,user3,user4
+  whitelist: Nicchus97,BadestFlopHD,user3,user4,XDawanX
   ops: Nicchus97
   maxPlayers: 6
   maxWorldSize: 10000
