@@ -42,6 +42,7 @@ minecraftServer:
   pvp: true
   memory: ""
   downloadWorldUrl: /data/minecraft-k8s-backup/test/new_world.zip
+  forceReDownload: true
 
   #modUrls: 
   # - "https://mediafilez.forgecdn.net/files/4930/701/fabric-carpet-1.20.3-1.4.128%2Bv231205.jar"
