@@ -15,15 +15,15 @@ readinessProbe:
   periodSeconds: 10
   timeoutSeconds: 5
 
-extraVolumes:
-  - name: world-import-volume
-    mountPath: /worldImport
-    readOnly: true
-
-    volumes: 
-    - name: world-import-volume
-      PersistentVolumeClaim:
-        claimName: minecraft-world-pvc
+#extraVolumes:
+#  - name: world-import-volume
+#    mountPath: /worldImport
+#    readOnly: true
+#
+#    volumes: 
+#    - name: world-import-volume
+#      PersistentVolumeClaim:
+#        claimName: minecraft-world-pvc
 
 minecraftServer:
   eula: "true"
@@ -51,8 +51,8 @@ minecraftServer:
   gameMode: survival
   pvp: true
   memory: ""
-  downloadWorldUrl: /worldImport/stefansWorld/stefansWorld.zip
-  forceReDownload: true
+  #downloadWorldUrl: /worldImport/stefansWorld/stefansWorld.zip
+  #forceReDownload: true
 
   modUrls: 
    - "https://cdn.modrinth.com/data/TQTTVgYE/versions/yYzR60Xd/fabric-carpet-1.20.3-1.4.128%2Bv231205.jar"
