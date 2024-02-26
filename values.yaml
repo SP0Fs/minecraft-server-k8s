@@ -15,6 +15,16 @@ readinessProbe:
   periodSeconds: 10
   timeoutSeconds: 5
 
+extraVolumes:
+  - name: worldImport
+    mountPath: /worldImport
+    readOnly: true
+
+    volumes: 
+    - name: worldImport
+      hostPath:
+        path: /home/spof/minecraft
+
 minecraftServer:
   eula: "true"
   version: "1.20.4"
@@ -41,7 +51,7 @@ minecraftServer:
   gameMode: survival
   pvp: true
   memory: ""
-  downloadWorldUrl: "https://drive.usercontent.google.com/download?id=1pwULx2QBgrZ1pLAjerGGuIhdCUkSYvOq&export=download&authuser=0&confirm=t&uuid=c5b08e2e-0f41-43e5-9ebf-cf198cf0921d&at=APZUnTVtpDuns3VxusNbnL60lBRd%3A1708984835002"
+  downloadWorldUrl: /worldImport/stefansWorld/stefansWorld.zip
   forceReDownload: true
 
   modUrls: 
