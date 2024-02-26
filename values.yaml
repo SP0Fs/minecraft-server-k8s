@@ -16,14 +16,14 @@ readinessProbe:
   timeoutSeconds: 5
 
 extraVolumes:
-  - name: world-import
+  - name: world-import-volume
     mountPath: /worldImport
     readOnly: true
 
     volumes: 
-    - name: world-import
-      hostPath:
-        path: /home/spof/minecraft
+    - name: world-import-volume
+      PersistentVolumeClaim:
+        claimName: minecraft-world-pvc
 
 minecraftServer:
   eula: "true"
