@@ -16,12 +16,12 @@ readinessProbe:
   timeoutSeconds: 5
 
 extraVolumes:
-  - name: worldImport
+  - name: world-import
     mountPath: /worldImport
     readOnly: true
 
     volumes: 
-    - name: worldImport
+    - name: world-import
       hostPath:
         path: /home/spof/minecraft
 
