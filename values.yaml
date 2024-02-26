@@ -37,7 +37,7 @@ minecraftServer:
   spawnNPCs: true
   spawnProtection: 0
   viewDistance: 12
-  levelSeed: 2705254700866455343
+  #levelSeed: 2705254700866455343
   gameMode: survival
   pvp: true
   memory: ""
@@ -56,9 +56,10 @@ extraEnv:
   MAX_MEMORY: 4G
 
 persistence:
+  storageClass: manual
   dataDir:
     enabled: true
-  existingClaim: minecraft-pvc
+    existingClaim: minecraft-pvc
 
 mcbackup:
   enabled: true
