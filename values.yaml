@@ -33,7 +33,7 @@ minecraftServer:
   whitelist: Nicchus97,BadestFlopHD,user3,user4,XDawanX
   ops: Nicchus97
   maxPlayers: 6
-  maxWorldSize: 100000
+  maxWorldSize: 59999968
   allowNether: true
   announcePlayerAchievements: true
   enableCommandBlock: true
